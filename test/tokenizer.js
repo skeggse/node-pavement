@@ -303,17 +303,36 @@ describe('tokenize', function() {
           terminal: true
         },
         terminal: false
-      }/*, {
+      }]
+    });
+  });
+
+  it('should tokenize deeper-loop', function() {
+    attempt([-1, -1, -1, 'one'], {
+      varOpts: {
+        loop: true,
+        deepLoop: true,
+        has: true
+      },
+      tokens: [{
         type: 'match',
         next: {
-          type: 'look',
-          values: [{
-            value: 'one',
-            at: 'prop'
-          }]
+          type: 'match',
+          next: {
+            type: 'match',
+            next: {
+              type: 'look',
+              values: [{
+                value: 'one',
+                at: 'prop'
+              }]
+            },
+            terminal: true
+          },
+          terminal: false
         },
-        terminal: true
-      }*/]
+        terminal: false
+      }]
     });
   });
 

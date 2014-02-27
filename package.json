@@ -1,0 +1,35 @@
+{
+  "name": "pavement",
+  "description": "pave a new getter function",
+  "version": "0.1.0",
+  "author": "Eli Skeggs <skeggse@gmail.com>",
+  "main": "./index",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skeggse/node-pavement.git"
+  },
+  "homepage": "https://github.com/skeggse/node-pavement",
+  "bugs": "https://github.com/skeggse/node-pavement/issues",
+  "keywords": [
+    "pave",
+    "pavement",
+    "path"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~1.12.0",
+    "chai": "~1.9.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/skeggse/node-pavement/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": "*"
+  }
+}

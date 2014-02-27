@@ -1,7 +1,7 @@
 {
   "name": "pavement",
   "description": "pave a new getter function",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Eli Skeggs <skeggse@gmail.com>",
   "main": "./index",
   "scripts": {
